@@ -24,6 +24,15 @@
     --kontakty-footer: rgba(255, 255, 255, 0.6);
 }
 
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--main-color-bg);
@@ -92,7 +101,11 @@ body {
 .tel .link:focus {
     color: var(--primary-color-text);
 }
-
+.menu, 
+.kontakty {
+    margin: 0;
+    padding: 0;
+}
 /* !!!стилі Футера!!! */
 .footer {
     background-color: var(--footer-color-bg);
@@ -134,16 +147,21 @@ body {
 /* ----------!!!стилі головної Студія!!!---------- */
 .hero {
     background-color: var(--footer-color-bg);
-}
+    text-align: center;
+    }
 .hero-title {
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--footer-color-text);
+    margin: 0px 0px 30px 0px;
+    padding-top: 200px;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 696px;
 }
 .hero-button {
     font-style: normal;
@@ -154,6 +172,11 @@ body {
     letter-spacing: 0.06em;
     background-color: var(--primary-color-text);
     color: var(--footer-color-text);
+    border-radius: 4px;
+    padding: 10px 32px;
+    border-color: transparent;
+    min-width: 216px;
+    margin-bottom: 200px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -225,6 +248,12 @@ ul {
 }
 a {
     text-decoration: none;
+}
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid red;
 }
 
 /* ----------!!!стилі головної Портфоліо!!!---------- */
