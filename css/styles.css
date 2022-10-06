@@ -25,6 +25,8 @@
     --shadow-main-button: 0px 4px 4px rgba(0, 0, 0, 0.15);
     --shadow-card-solid: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     --shadow-filtr-button: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    --work-list: #EEEEEE;
+    --line-header: #ECECEC;
 }
 
 html {
@@ -74,7 +76,14 @@ img {
 
 
 /* !!!стилі Шапки!!! */
+.container.shapka {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .logo {
+    display: flex;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -82,6 +91,7 @@ img {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--logo-color-text);
+    margin-right: 93px;
 }
 .logo-color {
     color: var(--primary-color-text);
@@ -92,6 +102,7 @@ img {
 .menu-kontakty .link,
 .mail .link,
 .tel .link {
+    display: block;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -112,9 +123,7 @@ img {
     color: var(--primary-color-text);
 }
 /* підсвічування поточного меню */
-.menu-portfolio .link.current {
-    color: var(--primary-color-text);
-}
+.menu-portfolio .link.current,
 .menu-studia .link.current {
     color: var(--primary-color-text);
 }
@@ -129,14 +138,32 @@ img {
 .tel .link:focus {
     color: var(--primary-color-text);
 }
-.menu,
+
+.menu {
+    display: flex;
+    align-items: center;
+}
 .kontakty {
-    margin: 0;
-    padding: 0;
+    display: flex;
 }
-.hero {
-    padding: 200px 452px 280px 452px;
+.kntkt-dist:first-child {
+    margin-right: 50px;
 }
+
+nav {
+    display: flex;
+    align-items: center;
+}
+.header {
+    padding: 32px 215px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--line-header);
+}
+.menu-dist:not(:last-child) {
+    margin-right: 50px;
+}
+
 
 
 /* !!!стилі Футера!!! */
@@ -303,7 +330,7 @@ img {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid red;
+    outline: 2px solid transparent;
 }
 
 .perevagy, .working, .comand {
@@ -329,7 +356,9 @@ img {
     background-color: var(--secondary-color-bg);
     color: var(--main-color-text);
     padding: 6px 22px;
+    margin-bottom: 50px;
 }
+
 .all .fr-button:hover,
 .all .fr-button:focus,
 .web .fr-button:hover,
@@ -338,11 +367,15 @@ img {
 .app .fr-button:focus,
 .design .fr-button:hover,
 .design .fr-button:focus,
-.marketing px.fr-button:hover,
+.marketing .fr-button:hover,
 .marketing .fr-button:focus {
     background-color: var(--primary-color-text);
     color: var(--footer-color-text);
     box-shadow: var(--shadow-filtr-button);
+}
+
+.all .fr-button {
+    padding: 6px 25px;
 }
  
 .title-portfolio {
@@ -351,7 +384,8 @@ img {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--main-color-text)
+    color: var(--main-color-text);
+    margin: 20px 24px 4px 24px;
 }
 .subname-portfolio {
     font-style: normal;
@@ -359,16 +393,26 @@ img {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--secondary-color-text);
+    margin: 0 24px 20px 24px;
 }
 
 .all-button {
     display: flex;
     gap: 8px;
+    justify-content: center;
 }
 .work-list {
-    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .portfolio-bg {
     padding: 94px 0;
+}
+.work-list > li {
+    border: 1px solid var(--work-list);
+}
+.work-list > li:nth-child(n+4) {
+    margin-top: 30px;
 }
