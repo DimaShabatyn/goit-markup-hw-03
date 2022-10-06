@@ -155,7 +155,7 @@ nav {
     align-items: center;
 }
 .header {
-    padding: 32px 215px;
+    padding: 32px 0;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--line-header);
@@ -213,7 +213,7 @@ nav {
 /* ----------!!!стилі головної Студія!!!---------- */
 .hero {
     background-color: var(--footer-color-bg);
-    padding: 200px 452px;
+    padding: 200px 0;
     text-align: center;
 }
 .hero-title {
