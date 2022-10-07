@@ -83,7 +83,6 @@ img {
 }
 
 .logo {
-    display: flex;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -404,15 +403,15 @@ nav {
 .work-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 30px;
+}
+.border-card {
+    max-width: 370px;
 }
 
 .portfolio-bg {
     padding: 94px 0;
 }
-.work-list > li {
+.border-card {
     border: 1px solid var(--work-list);
-}
-.work-list > li:nth-child(n+4) {
-    margin-top: 30px;
 }
