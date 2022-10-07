@@ -406,10 +406,10 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-left: -30px;
+
 }
 .border-card {
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc((100% - 60px) / 3);
 }
 .border-card:nth-child(3n) {
     margin-right: 0;
