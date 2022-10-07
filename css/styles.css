@@ -60,6 +60,7 @@ ul, ol {
 }
 img {
     display:block;
+    max-width: 100%;
 }
 
 .hero-button,
@@ -107,6 +108,8 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .menu-studia .link,
 .menu-portfolio .link,
@@ -138,6 +141,7 @@ img {
     color: var(--primary-color-text);
 }
 
+
 .menu {
     display: flex;
     align-items: center;
@@ -149,12 +153,11 @@ img {
     margin-right: 50px;
 }
 
-nav {
+.navigation {
     display: flex;
     align-items: center;
 }
 .header {
-    padding: 32px 0;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--line-header);
@@ -384,7 +387,7 @@ nav {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-color-text);
-    margin: 20px 24px 4px 24px;
+    margin-bottom: 4px;
 }
 .subname-portfolio {
     font-style: normal;
@@ -392,7 +395,6 @@ nav {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--secondary-color-text);
-    margin: 0 24px 20px 24px;
 }
 
 .all-button {
@@ -404,14 +406,28 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    margin-left: -30px;
 }
 .border-card {
-    max-width: 370px;
+    flex-basis: calc(100% / 3 - 30px);
+}
+.border-card:nth-child(3n) {
+    margin-right: 0;
 }
 
 .portfolio-bg {
     padding: 94px 0;
 }
-.border-card {
-    border: 1px solid var(--work-list);
+
+.card-content {
+    padding: 20px 24px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: var(--work-list);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--work-list);
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: var(--work-list);
 }
