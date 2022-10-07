@@ -402,11 +402,11 @@ img {
     gap: 8px;
     justify-content: center;
 }
+
 .work-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-
 }
 .border-card {
     flex-basis: calc((100% - 60px) / 3);
