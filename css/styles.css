@@ -42,7 +42,6 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--main-color-bg);
     color: var(--secondary-color-text);
-    margin: 0;
 }
 
 ul {
@@ -298,7 +297,6 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color-text);
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .title-subname {
@@ -311,9 +309,10 @@ img {
 .card-solid {
     background-color: var(--main-color-bg);
     border-radius: 0 0 4px 4px;
-    max-width: 270px;
-    min-height: 368px;
     box-shadow: var(--shadow-card-solid);
+}
+.comand-content {
+    padding: 30px 0;
 }
 
 .bg-violet {
@@ -358,7 +357,6 @@ img {
     background-color: var(--secondary-color-bg);
     color: var(--main-color-text);
     padding: 6px 22px;
-    margin-bottom: 50px;
 }
 
 .all .fr-button:hover,
@@ -376,9 +374,6 @@ img {
     box-shadow: var(--shadow-filtr-button);
 }
 
-.all .fr-button {
-    padding: 6px 25px;
-}
  
 .title-portfolio {
     font-style: normal;
@@ -401,6 +396,7 @@ img {
     display: flex;
     gap: 8px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .work-list {
